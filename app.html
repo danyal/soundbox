@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Soundbox</title>
+    <script src="./js/third-party/soundcloud-api.js"></script>
+    <link href="./css/app.css" rel="stylesheet" type="text/css">
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <div id="overlay">
+      <div id="loader-container">
+        <div class="loader"></div>
+        <div id="loader-message"></div>
+      </div>
+      <div id="sc-prompt">
+        <div class="logo-container">
+          <div class="sci-logo"></div>
+          <div class="sci-logo-text">Soundbox</div>
+        </div>
+        <div id="field-container">
+          <div class="text-field">
+            <input id="sc-username" type="text" placeholder="Soundcloud Username" required>
+          </div>
+          <div class="text-field" style="margin-top: 15px;">
+            <input id="sc-password" type="password" placeholder="Soundcloud Password" required>
+          </div>
+          <div id="incorrect-up">Incorrect username or password.</div>
+        </div>
+        <div id="button-container">
+            <button id="submit-button">Submit</button>
+        </div>
+      </div>
+    </div>
+    <div id="header">
+      <div class="header-bar">
+        <div class="sci-logo"></div>
+        <div class="dropdown-master">
+          <div class="dropdown-container">
+            <div class="dropdown-button">
+              Sort By
+              <div class="caret-icon"></div>
+            </div>
+            <div class="dropdown-menu" data-type="sort">
+              <div id="sort-added-on" class="dropdown-item selected" data-param="added_on">Added On Date</div>
+              <div id="sort-play-count" class="dropdown-item" data-param="popularity">Play Count</div>
+            </div>
+          </div>
+          <div class="vertical-divider"></div>
+          <div class="dropdown-container">
+            <div class="dropdown-button">
+              Track Type
+              <div class="caret-icon"></div>
+            </div>
+            <div class="dropdown-menu" data-type="filter">
+              <div id="sort-added-on" class="dropdown-item selected" data-param="all">All</div>
+              <div id="sort-play-count" class="dropdown-item" data-param="mix-only">Mixes</div>
+              <div id="sort-play-count" class="dropdown-item" data-param="track-only">Tracks</div>
+            </div>
+          </div>
+          <div class="vertical-divider"></div>
+          <div class="dropdown-container">
+            <div class="dropdown-button">
+              Listened
+              <div class="caret-icon"></div>
+            </div>
+            <div class="dropdown-menu" data-type="listened">
+              <div id="sort-added-on" class="dropdown-item selected" data-param="false">Unlistened (<span id="unlistened-stat"></span>)</div>
+              <div id="sort-play-count" class="dropdown-item" data-param="true">Listened (<span id="listened-stat"></span>)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="tracks"></div>
+    <div id="fixed-footer">
+      <div class="footer-bar">
+        <div class="player">
+          <iframe id="soundcloud-widget"
+            src="http://w.soundcloud.com/player/?show_artwork=false&liking=false&sharing=false&auto_play=false"
+            width="100%"
+            height="20"
+            frameborder="no">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+{
+  "name": "Soundbox",
+  "productName": "Soundbox",
+  "version": "0.1.0",
+  "description": "An easy way to keep track of what you've listened to in your Soundcloud feed.",
+  "main": "background.js",
+  "scripts": {
+    "start": "electron background.js",
+    "delete_db": "electron ./scripts/delete_db.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "Soundcloud"
+  ],
+  "author": "Danyal Anik",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "1.4.3",
+    "electron-rebuild": "1.2.1"
+  },
+  "dependencies": {
+    "app-module-path": "^1.1.0",
+    "electron-is-dev": "^0.1.2",
+    "fs-jetpack": "^0.10.0",
+    "jquery": "^2.2.4",
+    "moment": "^2.15.1",
+    "moment-duration-format": "^1.3.0",
+    "mustache": "^2.2.1",
+    "number-abbreviate": "^1.2.1",
+    "sequelize": "^3.24.4",
+    "soundcloud-nodejs-api-wrapper": "^0.3.2",
+    "sqlite3": "3.1.5"
+  }
+}

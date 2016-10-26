@@ -1,0 +1,33 @@
+{{#tracks}}
+  <div class="track soundcloud-link {{is_mix}}" data-soundcloud-url="{{url}}" data-sc-id="{{sc_id}}" data-track-id={{id}} data-soundcloud-permalink="{{permalink}}">
+    <div class="track-header">
+      <div class="left light-text">Posted {{relative_time}}</div>
+      <div class="right light-text">{{playcount_human}} plays</div>
+    </div>
+    <div class="track-body">
+      <div class="artwork">
+        <img src="{{artwork}}">
+        <div class="genre">{{genre_processed}}</div>
+      </div>
+      <div class="information">
+        <div>{{artist}}</div>
+        <div>{{title}}</div>
+        <div>{{track_length}}</div>
+        <div class="actions">
+          <div class="icon-container like-action">
+            <div class="heart-white-icon"></div>
+          </div>
+          <div class="icon-container repost-action">
+            <div class="repost-white-icon"></div>
+          </div>
+          <div class="icon-container click-out">
+            <div class="clickout-icon"></div>
+          </div>
+        </div>
+        <div class="play-button-container">
+          <div class="play-icon"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+{{/tracks}}
