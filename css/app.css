@@ -27,6 +27,7 @@ body {
   height: 50px;
   background-color: #323335;
   position: relative;
+  text-align: center;
 }
 
 #header .header-bar .sci-logo {
@@ -49,7 +50,6 @@ body {
 
 #header .dropdown-master {
   display: inline-block;
-  margin-left: 358px;
 }
 
 #header .vertical-divider {
@@ -120,6 +120,7 @@ body {
 }
 
 #fixed-footer .footer-bar {
+  box-sizing: border-box;
   width: 100%;
   height: 40px;
   background-color: #EEE;

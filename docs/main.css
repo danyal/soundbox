@@ -55,7 +55,11 @@ body {
   transition: color .3s,border .3s;
 }
 
-.action-buttons .button:first-child {
+.action-buttons a {
+  display: inline: block;
+}
+
+.action-buttons a:first-child {
   margin-right: 20px;
 }
 
@@ -66,11 +70,17 @@ body {
 
 .screenshot {
   margin-top: 50px;
+  border-radius: 10px;
+}
+
+.screenshot img {
+  border-radius: 5px;
 }
 
 .feature-heading {
   text-align: center;
   font-size: 40px;
+  margin-top: 30px;
 }
 .features .feature-cell {
   float: left;
@@ -91,4 +101,5 @@ body {
 
 .features .feature-cell .feature-text {
   text-align: center;
+  margin-top: 10px;
 }
