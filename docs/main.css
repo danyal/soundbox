@@ -43,6 +43,7 @@ body {
 
 .action-buttons .button {
   display: inline-block;
+  position: relative;
   cursor: pointer;
   padding: 15px 25px;
   width: 100px;
@@ -54,6 +55,14 @@ body {
   border: 2px solid #28aadc;
   -webkit-transition: color .3s,border .3s;
   transition: color .3s,border .3s;
+}
+
+.action-buttons .button .button-sub-label {
+  position: absolute;
+  color: #AAA;
+  font-size: 10px;
+  bottom: -17px;
+  left: 54px;
 }
 
 .action-buttons a {
