@@ -12,6 +12,7 @@ body {
   margin: 0 auto;
   font-family: 'Helvetica Neue';
   font-weight: 300;
+  box-sizing: border-box;
 }
 
 .header {
@@ -23,7 +24,7 @@ body {
 .sub-header {
   text-align: center;
   font-size: 20px;
-  margin: 0px;
+  margin-top: 10px;
 }
 
 #logo {
@@ -74,6 +75,7 @@ body {
 }
 
 .screenshot img {
+  width: 100%;
   border-radius: 5px;
 }
 
@@ -84,7 +86,7 @@ body {
 }
 .features .feature-cell {
   float: left;
-  width: 266px;
+  width: 33.33%;
   padding: 20px;
   box-sizing: border-box;
 }
@@ -102,4 +104,22 @@ body {
 .features .feature-cell .feature-text {
   text-align: center;
   margin-top: 10px;
+}
+
+@media (max-width: 800px) {
+  body {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .header {
+    font-size: 42px;
+  }
+
+  .features .feature-cell {
+    float: left;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
 }
